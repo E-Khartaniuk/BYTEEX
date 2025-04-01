@@ -1,0 +1,115 @@
+.benefitsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url("../../img/backgraund.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.asSeen {
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 10px;
+
+  color: #868787;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 120% */
+  letter-spacing: 0.45px;
+}
+
+.logoSliderContainer {
+  margin-top: 24px;
+  margin-bottom: 46px;
+}
+
+.benefitsSlider {
+  margin-top: 20px;
+}
+
+/* Стили для изображений в первом слайдере */
+.benefitsImage {
+  width: 300px; /* Фиксированная ширина */
+  height: 400px; /* Фиксированная высота */
+  object-fit: cover; /* Обрезаем, если не влезает */
+}
+
+/* Стили для логотипов во втором слайдере */
+.logoImage {
+  height: 30px; /* Фиксированная высота */
+  width: auto; /* Ширина подстраивается */
+  object-fit: contain; /* Сохраняем пропорции без обрезки */
+}
+.productName {
+  margin-top: 7px;
+
+  color: #676869;
+
+  text-align: center;
+  font-family: "Suisse Int'l";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 169.231% */
+  letter-spacing: 0.39px;
+}
+
+.benefitsList {
+  margin: 60px auto 40px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+.benefitsItem {
+  position: relative;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefitsItem:not(:last-child)::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgba(196, 196, 196, 0.5);
+  bottom: -50px;
+}
+
+.benefitsListItemContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.benefitsItemTitle {
+  color: #01005b;
+
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.8px;
+}
+.benefitsItemText {
+  margin-top: 20px;
+  color: #676869;
+
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.42px;
+}

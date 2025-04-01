@@ -13,8 +13,9 @@ import feedbackPhoto from "../../img/feedbackPhoto.png";
 function Hero() {
   return (
     <section className={css.heroSection}>
+      <AnnouncementBar />
+
       <div className={css.heroContainer}>
-        <AnnouncementBar />
         <a href="/" className={css.logo}>
           <Logo />
         </a>

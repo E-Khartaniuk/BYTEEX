@@ -1,11 +1,11 @@
 import React from "react";
 
-function Stars() {
+function Stars({ height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="60"
-      height="10"
+      height={height}
       viewBox="0 0 60 10"
       fill="none">
       <path

@@ -8,7 +8,7 @@ function FeedbackCard({ name, text, photo }) {
       <div className={css.feedbackContainer}>
         <img src={photo} alt="feedback avatar" className={css.feedbackPhoto} />
         <div className={css.feedbackReviewsContainer}>
-          <Stars />
+          <Stars height={10} />
           <span className={css.reviewsOnline}>
             One of 500+ 5 Star Reviews Online
           </span>
