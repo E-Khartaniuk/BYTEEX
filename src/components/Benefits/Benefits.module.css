@@ -1,61 +1,114 @@
 .benefitsSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
+  text-align: center;
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.benefitsSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
   background-image: url("../../img/backgraund.svg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .asSeen {
   text-align: center;
-  margin-top: 65px;
-  margin-bottom: 10px;
-
+  margin-top: 84px;
+  margin-bottom: 16px;
   color: #868787;
-  text-align: center;
   font-family: "Sofia Pro";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 120% */
+  line-height: 18px;
   letter-spacing: 0.45px;
 }
 
 .logoSliderContainer {
-  margin-top: 24px;
-  margin-bottom: 46px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .benefitsSlider {
   margin-top: 20px;
+  position: relative;
 }
 
-/* Стили для изображений в первом слайдере */
+.benefitsSlider .customPrevArrow,
+.benefitsSlider .customNextArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.benefitsSlider .customPrevArrow {
+  left: -68px;
+}
+
+.benefitsSlider .customNextArrow {
+  right: -68px;
+}
+
+.benefitsSlider .customPrevArrow svg,
+.benefitsSlider .customNextArrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+.benefitsSlider .customPrevArrow:hover svg path,
+.benefitsSlider .customNextArrow:hover svg path {
+  stroke: #01005b;
+}
+
 .benefitsImage {
-  width: 300px; /* Фиксированная ширина */
-  height: 400px; /* Фиксированная высота */
-  object-fit: cover; /* Обрезаем, если не влезает */
+  width: 300px;
+  height: 400px;
+  max-width: 600px;
+  object-fit: cover;
 }
 
-/* Стили для логотипов во втором слайдере */
 .logoImage {
-  height: 30px; /* Фиксированная высота */
-  width: auto; /* Ширина подстраивается */
-  object-fit: contain; /* Сохраняем пропорции без обрезки */
+  width: 80px;
+  height: 30px;
+  object-fit: contain;
 }
+
+.logoSliderContainer :global(.slick-slide) {
+  margin: 0 10px;
+}
+
+.logoSliderContainer :global(.slick-list) {
+  margin: 0 -10px;
+}
+
 .productName {
   margin-top: 7px;
-
   color: #676869;
-
   text-align: center;
   font-family: "Suisse Int'l";
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 169.231% */
+  line-height: 22px;
   letter-spacing: 0.39px;
 }
 
@@ -92,24 +145,74 @@
 
 .benefitsItemTitle {
   color: #01005b;
-
   text-align: center;
   font-family: "Sofia Pro";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
   letter-spacing: 0.8px;
 }
+
 .benefitsItemText {
   margin-top: 20px;
   color: #676869;
-
   text-align: center;
   font-family: "Sofia Pro";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 18px;
   letter-spacing: 0.42px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .logoSliderContainer {
+    max-width: 768px;
+  }
+
+  .logoImage {
+    width: 80px;
+    height: 30px;
+  }
+
+  .benefitsSlider .customPrevArrow {
+    left: -48px;
+  }
+
+  .benefitsSlider .customNextArrow {
+    right: -48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoSliderContainer {
+    max-width: 480px;
+  }
+
+  .logoImage {
+    width: 80px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 428px) {
+  .logoSliderContainer {
+    max-width: 428px;
+  }
+
+  .logoImage {
+    width: 80px;
+    height: 30px;
+  }
+
+  :global(.slick-slide) {
+    width: 214px !important;
+    margin: 0 10px !important;
+  }
+
+  .logoSliderContainer :global(.slick-list) {
+    margin: 0 -10px !important;
+  }
 }

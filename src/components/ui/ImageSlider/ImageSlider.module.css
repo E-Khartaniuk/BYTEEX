@@ -1,80 +1,72 @@
 .sliderContainer {
-  max-width: 600px;
+  width: 100%;
+  width: 300px;
+  max-width: 1200px;
   margin: 0 auto;
-  position: relative;
 }
 
 .slideImage {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%; /* Предотвращаем выход за контейнер */
-}
-
-/* Расстояние между слайдами */
-.slick-slide {
-  padding: 0 10px; /* 20px между слайдами */
-}
-
-.slick-list {
-  margin: 0 -10px; /* Компенсация padding */
-}
-
-/* Стили для кастомных точек */
-.customDots {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-}
-
-.customDots ul {
-  display: flex;
-  gap: 10px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.customDots li {
-  width: 50px;
-  height: 50px;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-}
-
-.customDots li.slick-active {
-  opacity: 1;
-}
-
-.customDots img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+}
+
+.thumbnail {
+  width: 50px;
+  height: auto;
   border-radius: 4px;
 }
 
-/* Стили для стандартных точек */
-.slick-dots {
-  position: relative;
+.customDots {
+  position: absolute;
   bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.customDots ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 5px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  gap: 10px;
 }
 
-.slick-dots li {
-  margin: 0;
+.customDots li {
+  display: inline-block;
 }
 
-.slick-dots li button:before {
-  font-size: 10px;
-  color: #ccc;
+.logoSliderContainer.slick-next {
+  fill: black;
 }
 
-.slick-dots li.slick-active button:before {
-  color: #000;
+@media (max-width: 768px) {
+  .sliderContainer {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sliderContainer {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 428px) {
+  .sliderContainer {
+    max-width: 428px; /* Ограничиваем ширину для мобильных */
+  }
+
+  .slick-track {
+    width: 100% !important; /* Переопределяем фиксированную ширину */
+  }
+
+  .slick-slide {
+    width: 100% !important; /* Слайды адаптируются под контейнер */
+  }
+
+  .slideImage {
+    width: 100%; /* Убеждаемся, что изображения адаптируются */
+  }
 }

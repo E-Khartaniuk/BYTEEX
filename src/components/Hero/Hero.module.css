@@ -61,3 +61,10 @@
   line-height: 18px; /* 138.462% */
   letter-spacing: 0.39px;
 }
+
+.feedbackCardContainer {
+  position: absolute;
+  bottom: -72px;
+  left: 50%;
+  transform: translate(-50%, -50px);
+}

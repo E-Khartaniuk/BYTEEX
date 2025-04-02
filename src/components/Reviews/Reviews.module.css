@@ -1,0 +1,61 @@
+.reviewsSection {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.text {
+  max-width: 600px;
+  margin: 20px auto;
+  color: #676869;
+  font-family: "Sofia Pro";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.reviewsSlider {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* Стили только для этого слайдера */
+.reviews-slider :global(.slick-slide) {
+  padding: 0 10px; /* Промежутки между карточками */
+  height: auto; /* Позволяем слайду растягиваться по содержимому */
+}
+
+/* Убеждаемся, что карточки внутри слайда растягиваются по контенту */
+.reviews-slider :global(.slick-slide > div) {
+  height: 100%; /* Растягиваем вложенный div */
+}
+
+/* Стили для FeedbackCard внутри этого слайдера */
+.reviews-slider :global(.slick-slide) .feedbackCard {
+  height: auto; /* Высота зависит от содержимого */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Контент выравнивается сверху */
+}
+
+.reviews-slider :global(.slick-list) {
+  margin: 0 -10px; /* Компенсируем отступы по краям */
+}
+
+.reviews-slider :global(.slick-dots) {
+  margin-top: 20px;
+}
+
+.reviews-slider :global(.slick-dots li button:before) {
+  font-size: 10px;
+  color: #ccc;
+}
+
+.reviews-slider :global(.slick-dots li.slick-active button:before) {
+  color: #01005b;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .reviewsSlider {
+    max-width: 100%;
+  }
+}

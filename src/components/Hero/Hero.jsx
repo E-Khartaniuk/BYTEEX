@@ -7,8 +7,8 @@ import ImgBlock from "../ui/ImgBlock/ImgBlock";
 import Icon1 from "../../icons/icon1";
 import Icon2 from "../../icons/icon2";
 import Icon3 from "../../icons/icon3";
-import FeedbackCard from "../ui/FeedbackCard/FeedbackCard";
 import feedbackPhoto from "../../img/feedbackPhoto.png";
+import HeroFeedbackCard from "../ui/HeroFeedbackCard/HeroFeedbackCard";
 
 function Hero() {
   return (
@@ -49,11 +49,13 @@ function Hero() {
         </ul>
         <CTAButton />
       </div>
-      <FeedbackCard
-        name="Jane, S."
-        photo={feedbackPhoto}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo."
-      />
+      <div className={css.feedbackCardContainer}>
+        <HeroFeedbackCard
+          name="Jane, S."
+          photo={feedbackPhoto}
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo."
+        />
+      </div>
     </section>
   );
 }

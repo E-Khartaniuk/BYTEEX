@@ -1,0 +1,43 @@
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 110px); /* 4 изображения в ряду */
+  grid-template-rows: repeat(2, 110px); /* 2 ряда по 110px */
+  gap: 4px; /* Промежутки между изображениями */
+  justify-content: center;
+  max-width: 470px; /* 4 * 110px + 3 * 10px */
+  margin: 40px auto;
+}
+
+/* Скрываем изображения после 8-го на мобильной версии */
+@media (max-width: 1260px) {
+  .imageGrid img:nth-child(n + 9) {
+    display: none; /* Скрываем все изображения, начиная с 9-го */
+  }
+}
+
+.gridImage {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+}
+
+/* Десктопная версия: 2 ряда по 11 изображений */
+@media (min-width: 1260px) {
+  .imageGrid {
+    grid-template-columns: repeat(11, 110px); /* 11 изображений в ряду */
+    grid-template-rows: repeat(2, 110px); /* 2 ряда */
+    max-width: 1260px; /* 11 * 110px + 10px * 10 промежутков */
+    gap: 5px;
+  }
+
+  /* Показываем все изображения на десктопе */
+  .imageGrid img:nth-child(n + 9) {
+    display: block; /* Убеждаемся, что все 22 видны */
+  }
+}
+
+@media (max-width: 768px) {
+  .reviewsSlider {
+    max-width: 100%;
+  }
+}

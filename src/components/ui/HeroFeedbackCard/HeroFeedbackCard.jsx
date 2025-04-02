@@ -1,8 +1,8 @@
 import React from "react";
-import css from "./FeedbackCard.module.css";
+import css from "./HeroFeedbackCard.module.css";
 import Stars from "../../../icons/Stars";
 
-function FeedbackCard({ name, text, photo, stars = true }) {
+function HeroFeedbackCard({ name, text, photo, stars = true }) {
   return (
     <article className={css.feedbackCard}>
       <div className={css.feedbackContainer}>
@@ -22,4 +22,4 @@ function FeedbackCard({ name, text, photo, stars = true }) {
   );
 }
 
-export default FeedbackCard;
+export default HeroFeedbackCard;
