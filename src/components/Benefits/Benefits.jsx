@@ -72,7 +72,7 @@ function Benefits() {
     slidesToScroll: 1,
     centerMode: false,
     infinite: true,
-    arrows: true, // Оставляем стандартные стрелки для второго слайдера
+    arrows: true,
     responsive: [
       {
         breakpoint: 768,

@@ -53,20 +53,20 @@
   }
 }
 
-@media (max-width: 428px) {
+/* @media (max-width: 428px) {
   .sliderContainer {
-    max-width: 428px; /* Ограничиваем ширину для мобильных */
+    max-width: 428px;  
   }
 
   .slick-track {
-    width: 100% !important; /* Переопределяем фиксированную ширину */
+    width: 100% !important;  
   }
 
   .slick-slide {
-    width: 100% !important; /* Слайды адаптируются под контейнер */
+    width: 100% !important;  
   }
 
   .slideImage {
-    width: 100%; /* Убеждаемся, что изображения адаптируются */
+    width: 100%; 
   }
-}
+} */

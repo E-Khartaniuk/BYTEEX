@@ -5,7 +5,6 @@
   align-items: center;
 }
 
-/* Десктопный список */
 .desktopList {
   display: flex;
   justify-content: center;
@@ -14,7 +13,6 @@
   margin-bottom: 56px;
 }
 
-/* Мобильный слайдер */
 .mobileSlider {
   display: none;
   max-width: 300px;
@@ -22,20 +20,18 @@
   position: relative;
 }
 
-/* Улучшаем выравнивание карточек в слайдере */
 .slick-slide {
   display: flex;
   justify-content: center;
 }
 
-/* Стили для кастомных стрелок */
 .customArrow {
   width: 30px;
   height: 30px;
   margin-left: -25px;
   margin-right: -25px;
   z-index: 1;
-  display: flex !important; /* Убеждаемся, что стрелки видны */
+  display: flex !important;
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease;
@@ -45,7 +41,6 @@
   opacity: 0.7;
 }
 
-/* Позиционирование стрелок */
 .mobileSlider .slick-prev {
   left: -40px;
 }
@@ -58,10 +53,9 @@
   right: -50px;
 }
 
-/* Убираем стандартные стрелки с большей специфичностью */
 .mobileSlider .slick-prev:before,
 .mobileSlider .slick-next:before {
-  display: none !important; /* Скрываем стандартные иконки */
+  display: none !important;
 }
 
 /* Медиа-запросы */

@@ -86,7 +86,6 @@ function HowItWorks() {
     <section className={css.howItWorksSection}>
       <h2 className="title">Comfort made easy</h2>
 
-      {/* Десктопный список */}
       <div className={css.desktopList}>
         {items.map((item) => (
           <ComfortCard
@@ -99,7 +98,6 @@ function HowItWorks() {
         ))}
       </div>
 
-      {/* Мобильный слайдер */}
       <div className={css.mobileSlider}>
         <Slider {...sliderSettings}>
           {items.map((item) => (

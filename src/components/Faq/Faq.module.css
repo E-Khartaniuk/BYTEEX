@@ -1,0 +1,89 @@
+.faqSection {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqContainer {
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+
+.faqItem {
+  padding-top: 22px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+  text-align: left;
+}
+
+.faqTitle {
+  color: #01005b;
+
+  font-family: "Sofia Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 0.72px;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faqItem.active .arrow {
+  transform: rotate(
+    180deg
+  ); /* SVG поворачивается на 45° для перехода из + в − */
+}
+.faqContent {
+  color: #676869;
+  margin-top: 10px;
+  font-family: "Sofia Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.42px;
+
+  max-width: 95%;
+  max-height: 0; /* Скрыто по умолчанию */
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Анимация высоты */
+}
+
+.faqItem.active .faqContent {
+  max-height: 200px; /* Максимальная высота при открытии (настройте под контент) */
+  padding: 0 0 15px 0; /* Отступ снизу только при открытии */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .faqSection {
+    padding: 28px 35px 52px;
+  }
+
+  .faqTitle {
+    font-size: 16px;
+  }
+
+  .faqContent {
+    font-size: 13px;
+  }
+
+  .faqItem.active .faqContent {
+    max-height: 300px; /* Увеличиваем для мобильных, если контент длиннее */
+  }
+}

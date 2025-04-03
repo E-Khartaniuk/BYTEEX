@@ -4,7 +4,7 @@ function About() {
   return (
     <section className={css.aboutSection}>
       <div className={css.aboutContainer}>
-        <h2 className="title">Be your best self.</h2>
+        <h2 className={css.title}>Be your best self.</h2>
         <div className={css.aboutImage}></div>
         <div className={css.aboutTextContainer}>
           <p>Hi! My name’s [Insert Name], and I founded [Insert] in ____. </p>

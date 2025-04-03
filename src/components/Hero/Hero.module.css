@@ -64,7 +64,62 @@
 
 .feedbackCardContainer {
   position: absolute;
-  bottom: -72px;
+  bottom: -12px;
   left: 50%;
   transform: translate(-50%, -50px);
+}
+
+@media (min-width: 1465px) {
+  .heroSection {
+    position: relative;
+  }
+
+  .heroContainer {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 86px;
+    align-items: normal;
+    display: flex;
+    flex-direction: column;
+    max-width: 1465px;
+    padding-bottom: 142px;
+  }
+
+  .heroTitle {
+    text-align: left;
+    font-size: 38px;
+    line-height: 45px; /* 118.421% */
+    letter-spacing: 1.52px;
+    width: 592px;
+  }
+
+  .logo {
+    margin-top: 30px;
+    margin-left: 96px;
+    margin-bottom: 62px;
+  }
+
+  .list {
+    margin: 32px 0 32px;
+    gap: 32px;
+  }
+
+  .listItem {
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.45px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    width: 425px;
+  }
+
+  .feedbackCardContainer {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    transform: translate(0%, 50%);
+  }
 }

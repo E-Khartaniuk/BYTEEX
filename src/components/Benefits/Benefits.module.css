@@ -166,7 +166,6 @@
   letter-spacing: 0.42px;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
   .logoSliderContainer {
     max-width: 768px;
@@ -197,7 +196,7 @@
   }
 }
 
-@media (max-width: 428px) {
+/* @media (max-width: 428px) {
   .logoSliderContainer {
     max-width: 428px;
   }
@@ -205,14 +204,14 @@
   .logoImage {
     width: 80px;
     height: 30px;
-  }
+  } */
 
-  :global(.slick-slide) {
+/* :global(.slick-slide) {
     width: 214px !important;
     margin: 0 10px !important;
-  }
+  } */
 
-  .logoSliderContainer :global(.slick-list) {
+/* .logoSliderContainer :global(.slick-list) {
     margin: 0 -10px !important;
-  }
-}
+  } */
+/* } */

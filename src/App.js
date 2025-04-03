@@ -1,8 +1,12 @@
 import "./App.css";
 import About from "./components/About/About";
 import Benefits from "./components/Benefits/Benefits";
+import FAQ from "./components/FAQ/FAQ.jsx";
+import FinalCTA from "./components/FinalCTA/FinalCTA";
+
 import Hero from "./components/Hero/Hero";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
+import InfoBanner from "./components/InfoBanner/InfoBanner";
 import Reviews from "./components/Reviews/Reviews";
 
 function App() {
@@ -13,6 +17,9 @@ function App() {
       <About />
       <HowItWorks />
       <Reviews />
+      <FAQ />
+      <InfoBanner />
+      <FinalCTA />
     </div>
   );
 }

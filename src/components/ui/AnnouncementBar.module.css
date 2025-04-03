@@ -17,3 +17,28 @@
   line-height: 35px; /* 318.182% */
   letter-spacing: 0.88px;
 }
+
+.leftAnnouncementBarText,
+.RightAnnouncementBarText {
+  display: none;
+
+  color: #565656;
+
+  font-family: "Suisse Int'l";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px; /* 318.182% */
+  letter-spacing: 0.88px;
+}
+
+@media (min-width: 1465px) {
+  .leftAnnouncementBarText,
+  .RightAnnouncementBarText {
+    display: block;
+  }
+
+  .announcementBarText {
+    color: #565656;
+  }
+}
