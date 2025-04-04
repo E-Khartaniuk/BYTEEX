@@ -19,7 +19,7 @@
   color: #01005b;
 
   text-align: center;
-  font-family: "Sofia Pro";
+  font-family: "Sofia Sans", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +38,7 @@
 .faqTitle {
   color: #01005b;
 
-  font-family: "Sofia Pro";
+  font-family: "Sofia Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -67,7 +67,7 @@
   color: #676869;
   margin-top: 10px;
 
-  font-family: "Sofia Pro";
+  font-family: "Sofia Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

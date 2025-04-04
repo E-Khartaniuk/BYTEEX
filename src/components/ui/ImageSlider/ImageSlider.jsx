@@ -22,7 +22,7 @@ function ImageSlider({
     centerPadding: "0px",
     ...(useCustomDots && {
       customPaging: (i) => (
-        <a>
+        <a href="/">
           <img
             src={images[i]}
             alt={`thumbnail-${i}`}

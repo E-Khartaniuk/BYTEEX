@@ -1,7 +1,8 @@
 import "./App.css";
 import About from "./components/About/About";
 import Benefits from "./components/Benefits/Benefits";
-import FAQ from "./components/FAQ/FAQ.jsx";
+import FAQ from "./components/FAQ/FAQ";
+
 import FinalCTA from "./components/FinalCTA/FinalCTA";
 
 import Hero from "./components/Hero/Hero";

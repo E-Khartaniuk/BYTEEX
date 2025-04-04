@@ -67,6 +67,7 @@
   width: 70px;
   height: 99px;
   top: 50px;
+
   left: -50%;
   transform: translate(15px, -20px);
   background: linear-gradient(

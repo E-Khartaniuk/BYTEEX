@@ -57,7 +57,7 @@ function ImageGrid() {
         <img
           key={index}
           src={img}
-          alt={`Image ${index + 1}`}
+          alt={`slide ${index + 1}`}
           className={css.gridImage}
         />
       ))}
