@@ -17,7 +17,7 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 160% */
+  line-height: 40px;
   letter-spacing: 1px;
 }
 
@@ -31,7 +31,7 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23px; /* 153.333% */
+  line-height: 23px;
   letter-spacing: 0.45px;
   &:not(:first-child) {
     margin-top: 30px;
@@ -47,8 +47,6 @@
 
   width: 304px;
   height: 310px;
-  /* max-width: 608px;
-  max-height: 620px; */
 
   margin: 62px auto 75px;
 

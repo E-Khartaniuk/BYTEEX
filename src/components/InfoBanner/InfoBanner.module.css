@@ -18,7 +18,7 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 160% */
+  line-height: 40px;
   letter-spacing: 1px;
 }
 .infoList li:nth-child(3) {
@@ -52,7 +52,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 90.909% */
+  line-height: 20px;
   letter-spacing: 0.44px;
 }
 .description {
@@ -63,7 +63,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   letter-spacing: 0.42px;
 }
 
