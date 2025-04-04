@@ -3,11 +3,11 @@ import css from "./Benefits.module.css";
 import ImageSlider from "../ui/ImageSlider/ImageSlider";
 import WhiteRobe1 from "../../img/WhiteRobe.jpg";
 import WhiteRobe2 from "../../img/WhiteRobe2.jpg";
-import logo1 from "../../img/companyLogos/Artboard2 1.png";
-import logo2 from "../../img/companyLogos/Artboard3 1.png";
-import logo3 from "../../img/companyLogos/Artboard4 1.png";
-import logo4 from "../../img/companyLogos/Artboard5 1.png";
-import logo5 from "../../img/companyLogos/Artboard6 1.png";
+import logo1 from "../../img/companyLogos/onesize/Artboard2 1.png";
+import logo2 from "../../img/companyLogos/onesize/Artboard3 1.png";
+import logo3 from "../../img/companyLogos/onesize/Artboard4 1.png";
+import logo4 from "../../img/companyLogos/onesize/Artboard5 1.png";
+import logo5 from "../../img/companyLogos/onesize/Artboard6 1.png";
 import Cloud from "../../icons/cloud";
 import Icon1 from "../../icons/icon1";
 import Leafe from "../../icons/leafe";
@@ -89,7 +89,7 @@ function Benefits() {
       {
         breakpoint: 428,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
     ],

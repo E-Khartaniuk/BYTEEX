@@ -1,7 +1,7 @@
 import "./App.css";
 import About from "./components/About/About";
 import Benefits from "./components/Benefits/Benefits";
-import FAQ from "./components/FAQ/FAQ";
+import FAQ from "./components/FaqSection/FAQ";
 
 import FinalCTA from "./components/FinalCTA/FinalCTA";
 

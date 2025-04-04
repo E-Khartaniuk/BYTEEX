@@ -126,7 +126,7 @@
 
 .benefitsList {
   margin: 60px auto 40px;
-  width: 380px;
+  /* width: 380px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,7 +201,7 @@
 
 @media (max-width: 480px) {
   .logoSliderContainer {
-    max-width: 480px;
+    max-width: 100%;
   }
 }
 
