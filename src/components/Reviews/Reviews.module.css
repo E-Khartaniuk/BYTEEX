@@ -17,27 +17,24 @@
   margin: 40px auto;
 }
 
-/* Стили только для этого слайдера */
 .reviews-slider :global(.slick-slide) {
-  padding: 0 10px; /* Промежутки между карточками */
-  height: auto; /* Позволяем слайду растягиваться по содержимому */
+  padding: 0 10px;
+  height: auto;
 }
 
-/* Убеждаемся, что карточки внутри слайда растягиваются по контенту */
 .reviews-slider :global(.slick-slide > div) {
-  height: 100%; /* Растягиваем вложенный div */
+  height: 100%;
 }
 
-/* Стили для FeedbackCard внутри этого слайдера */
 .reviews-slider :global(.slick-slide) .feedbackCard {
-  height: auto; /* Высота зависит от содержимого */
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Контент выравнивается сверху */
+  justify-content: flex-start;
 }
 
 .reviews-slider :global(.slick-list) {
-  margin: 0 -10px; /* Компенсируем отступы по краям */
+  margin: 0 -10px;
 }
 
 .reviews-slider :global(.slick-dots) {
@@ -57,5 +54,19 @@
 @media (max-width: 768px) {
   .reviewsSlider {
     max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviewsSection {
+    padding: 40px 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1465px) {
+  .reviewsSection {
+    padding: 40px 20px;
+    text-align: center;
   }
 }

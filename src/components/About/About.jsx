@@ -1,5 +1,6 @@
 import React from "react";
 import css from "./About.module.css";
+import CTAButton from "../ui/CTAButton";
 function About() {
   return (
     <section className={css.aboutSection}>
@@ -34,6 +35,9 @@ function About() {
             sapien.
           </p>
           <p>Cras mattis varius mollis.</p>
+          <div className={css.aboutCTA}>
+            <CTAButton />
+          </div>
         </div>
       </div>
     </section>

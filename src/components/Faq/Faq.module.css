@@ -1,5 +1,7 @@
 .faqSection {
-  padding: 40px 20px;
+  position: relative;
+  padding: 48px 40px 52px;
+
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
@@ -8,6 +10,21 @@
 .faqContainer {
   margin-top: 40px;
   margin-bottom: 45px;
+}
+
+.title {
+  margin: 0 auto;
+
+  width: 318px;
+  color: #01005b;
+
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 115.385% */
+  letter-spacing: 1.04px;
 }
 
 .faqItem {
@@ -22,10 +39,10 @@
   color: #01005b;
 
   font-family: "Sofia Pro";
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
   letter-spacing: 0.72px;
 
   cursor: pointer;
@@ -44,46 +61,115 @@
   justify-content: center;
 }
 .faqItem.active .arrow {
-  transform: rotate(
-    180deg
-  ); /* SVG поворачивается на 45° для перехода из + в − */
+  transform: rotate(180deg);
 }
 .faqContent {
   color: #676869;
   margin-top: 10px;
+
   font-family: "Sofia Pro";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   letter-spacing: 0.42px;
 
   max-width: 95%;
-  max-height: 0; /* Скрыто по умолчанию */
+  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease; /* Анимация высоты */
+  transition: max-height 0.3s ease;
 }
 
 .faqItem.active .faqContent {
-  max-height: 200px; /* Максимальная высота при открытии (настройте под контент) */
-  padding: 0 0 15px 0; /* Отступ снизу только при открытии */
+  max-height: 200px;
+  padding: 0 0 15px 0;
 }
 
-/* Адаптивность */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .faqItem.active .faqContent {
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 1465px) {
   .faqSection {
-    padding: 28px 35px 52px;
+    padding: 40px 20px;
+    max-width: 1465px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+  }
+  .CTAContainer {
+    display: none;
+  }
+
+  .title {
+    width: 592px;
+    margin-left: 0;
+    text-align: left;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1.28px;
+  }
+
+  .faqContainer {
+    width: 630px;
   }
 
   .faqTitle {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .faqContent {
-    font-size: 13px;
+    font-size: 15px;
+
+    line-height: 22px;
+    letter-spacing: 0.45px;
   }
 
   .faqItem.active .faqContent {
-    max-height: 300px; /* Увеличиваем для мобильных, если контент длиннее */
+    max-height: 300px;
+  }
+
+  .FAQImageBlock {
+    position: absolute;
+    background-image: url(../../img/finalCTAright.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 227px;
+    height: 355px;
+    flex-shrink: 0;
+    right: 230px;
+    top: 200px;
+  }
+  .rightImage {
+    position: absolute;
+    background-image: url(../../img/finalCTAleft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 209px;
+    height: 279px;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -55%);
+    z-index: -1;
+  }
+
+  .leftImage {
+    position: absolute;
+    background-image: url(../../img/faqLeft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 209px;
+    height: 279px;
+
+    left: 0;
+    bottom: 0;
+
+    transform: translate(-36%, 62%);
+    z-index: -1;
   }
 }

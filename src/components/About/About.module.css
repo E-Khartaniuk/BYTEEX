@@ -3,9 +3,10 @@
   padding: 40px 46px 54px;
 }
 .aboutContainer {
+  position: relative;
   margin: 0 auto 0;
   min-width: 336px;
-  max-width: 540px;
+  max-width: 768px;
 }
 
 .title {
@@ -46,6 +47,8 @@
 
   width: 304px;
   height: 310px;
+  /* max-width: 608px;
+  max-height: 620px; */
 
   margin: 62px auto 75px;
 
@@ -81,5 +84,69 @@
     background-position: center;
     transform: translate(-12px, 0px);
     z-index: 2;
+  }
+}
+
+.aboutCTA {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .aboutImage {
+    width: 363px;
+    height: 470px;
+  }
+}
+@media (min-width: 768px) {
+  .aboutImage {
+    width: 488px;
+    height: 570px;
+  }
+}
+
+@media (min-width: 1465px) {
+  .aboutSection {
+    padding: 0;
+  }
+  .aboutContainer {
+    width: 1465px;
+    max-width: 1465px;
+    padding: 113px 100px 95px;
+  }
+
+  .title {
+    margin-left: 290px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1.28px;
+  }
+
+  .aboutImage {
+    position: absolute;
+    left: 57px;
+    bottom: 70px;
+    width: 488px;
+    height: 570px;
+
+    &::after {
+      width: 134.81px;
+      height: 176px;
+      transform: translate(12px, 30px);
+    }
+
+    &::before {
+      width: 165.061px;
+      height: 175px;
+      transform: translate(-12px, -15px);
+    }
+  }
+
+  .aboutTextContainer {
+    width: 619px;
+    margin-left: auto;
+  }
+  .aboutCTA {
+    margin-top: 30px;
+    display: block;
   }
 }

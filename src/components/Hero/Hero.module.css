@@ -64,7 +64,7 @@
 
 .feedbackCardContainer {
   position: absolute;
-  bottom: -12px;
+  bottom: -140px;
   left: 50%;
   transform: translate(-50%, -50px);
 }

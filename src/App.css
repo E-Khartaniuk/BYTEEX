@@ -17,6 +17,8 @@
 
 @media (min-width: 1465px) {
   .title {
+    width: 631px;
+
     text-align: center;
     font-size: 32px;
 

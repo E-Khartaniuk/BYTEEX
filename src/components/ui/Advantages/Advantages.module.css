@@ -1,0 +1,46 @@
+.list {
+  display: none;
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.listItem {
+  display: none;
+  gap: 12px;
+  align-items: center;
+}
+
+.listItem:not(:last-child) {
+  border-right: 1px solid rgba(196, 196, 196, 0.4);
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: rgba(102, 102, 102, 0.1);
+  border-radius: 50%;
+}
+.text {
+  width: 142px;
+
+  color: #676869;
+  font-family: "Sofia Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.42px;
+}
+
+@media (min-width: 1465px) {
+  .list {
+    display: flex;
+  }
+  .listItem {
+    display: flex;
+  }
+}

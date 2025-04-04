@@ -76,3 +76,36 @@
   );
   z-index: -1;
 }
+
+@media (min-width: 1465px) {
+  .imgContainer {
+    margin-top: 46px;
+    height: 374px;
+  }
+  .mainImage {
+    width: 246.207px;
+    height: 372.996px;
+  }
+  .imgWrapperLeft {
+    width: 209.072px;
+    height: 316.737px;
+    transform: translate(-160%, -50%);
+  }
+  .imgWrapperRight {
+    width: 209.072px;
+    height: 316.737px;
+    transform: translate(60%, -50%);
+  }
+
+  .imgWrapperRight::after {
+    width: 139px;
+    height: 196px;
+    top: 68px;
+    left: 150px;
+  }
+  .imgWrapperLeft::after {
+    width: 139px;
+    height: 196px;
+    top: 68px;
+  }
+}

@@ -80,7 +80,7 @@
   .imgContainer {
     margin-top: 14px;
     position: absolute;
-    right: 185px;
+    right: 235px;
     bottom: 150px;
     width: 360px;
     height: 224px;
@@ -94,5 +94,41 @@
     left: 50%;
     transform: translate(-50%, -25%);
     border: 3px solid white;
+  }
+
+  .imgWrapperLeft {
+    width: 255px;
+    height: 313px;
+    top: 50%;
+    left: 57%;
+  }
+  .leftImage {
+    width: 253px;
+    height: 319px;
+  }
+
+  .imgWrapperRight {
+    width: 240px;
+    height: 300px;
+    top: 38%;
+    left: 45%;
+  }
+  .rightImage {
+    width: 235px;
+    height: 362px;
+  }
+
+  .imgWrapperLeft::after {
+    width: 134px;
+    height: 189px;
+    top: 75px;
+    left: -39%;
+  }
+
+  .imgWrapperRight::after {
+    width: 134px;
+    height: 189px;
+    top: 91px;
+    left: 169px;
   }
 }

@@ -66,3 +66,47 @@
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.42px;
 }
+
+@media (min-width: 768px) {
+  .infoList {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .infoItem {
+    width: 200px;
+  }
+
+  .infoItem:first-child {
+    border-right: 1px solid rgba(196, 196, 196, 0.5);
+  }
+
+  .infoItem {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .infoList li:nth-child(3) {
+    display: flex;
+  }
+
+  .infoItem:not(:last-child) {
+    width: 282px;
+    border-right: 1px solid rgba(196, 196, 196, 0.5);
+  }
+
+  .infoItem {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1465px) {
+  .infoList li:nth-child(3) {
+    display: flex;
+  }
+
+  .infoSection {
+    padding: 40px 100px 56px;
+  }
+}

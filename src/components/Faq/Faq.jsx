@@ -47,27 +47,35 @@ function FAQ() {
 
   return (
     <section className={css.faqSection}>
-      <h2 className="title">Frequently Asked Questions</h2>
+      <div className={css.faqContainer}>
+        <h2 className={css.title}>Frequently Asked Questions</h2>
 
-      <ul className={css.faqContainer}>
-        {faqData.map((item, index) => (
-          <li
-            key={index}
-            className={`${css.faqItem} ${
-              openIndex === index ? css.active : ""
-            }`}>
-            <h4 className={css.faqTitle} onClick={() => toggleItem(index)}>
-              {item.title}
-              <span className={css.arrow}>
-                {openIndex === index ? <Plus /> : <Minus />}
-              </span>
-            </h4>
-            <p className={css.faqContent}>{item.content}</p>
-          </li>
-        ))}
-      </ul>
-      <CTAButton />
-      <StarsUnderCTA />
+        <ul className={css.faqContainer}>
+          {faqData.map((item, index) => (
+            <li
+              key={index}
+              className={`${css.faqItem} ${
+                openIndex === index ? css.active : ""
+              }`}>
+              <h4 className={css.faqTitle} onClick={() => toggleItem(index)}>
+                {item.title}
+                <span className={css.arrow}>
+                  {openIndex === index ? <Plus /> : <Minus />}
+                </span>
+              </h4>
+              <p className={css.faqContent}>{item.content}</p>
+            </li>
+          ))}
+        </ul>
+        <div className={css.CTAContainer}>
+          <CTAButton />
+          <StarsUnderCTA />
+        </div>
+        <div className={css.FAQImageBlock}>
+          <div className={css.leftImage}></div>
+          <div className={css.rightImage}></div>
+        </div>
+      </div>
     </section>
   );
 }

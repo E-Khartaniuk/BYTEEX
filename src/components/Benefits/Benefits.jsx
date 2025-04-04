@@ -97,75 +97,87 @@ function Benefits() {
 
   return (
     <section className={css.benefitsSection}>
-      <p className={css.asSeen}>as seen in</p>
-      <div className={css.logoSliderContainer}>
-        <ImageSlider
-          images={slider2Images}
-          sliderSettings={slider2Settings}
-          useCustomDots={false}
-          imageClassName={css.logoImage}
-        />
-      </div>
-      <h2 className="title">Loungewear you can be proud of.</h2>
-      <div className={css.benefitsSlider}>
-        <ImageSlider
-          images={slider1Images}
-          sliderSettings={slider1Settings}
-          dotsStyles={{ bottom: "30px" }}
-          imageClassName={css.benefitsImage}
-        />
-      </div>
-      <p className={css.productName}>White Robe</p>
+      <div className={css.container}>
+        <p className={css.asSeen}>as seen in</p>
+        <div className={css.logoSliderContainer}>
+          <ImageSlider
+            images={slider2Images}
+            sliderSettings={slider2Settings}
+            useCustomDots={false}
+            imageClassName={css.logoImage}
+          />
+        </div>
 
-      <ul className={css.benefitsList}>
-        <li className={css.benefitsItem}>
-          <Cloud />
-          <div className={css.benefitsListItemContainer}>
-            <h4 className={css.benefitsItemTitle}>Ethically sourced.</h4>
-            <p className={css.benefitsItemText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
-              felis finibus consequat.
-            </p>
-          </div>
-        </li>
-        <li className={css.benefitsItem}>
-          <Icon1 />
-          <div className={css.benefitsListItemContainer}>
-            <h4 className={css.benefitsItemTitle}>Ethically sourced.</h4>
-            <p className={css.benefitsItemText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
-              felis finibus consequat.
-            </p>
-          </div>
-        </li>
-        <li className={css.benefitsItem}>
-          <Leafe />
-          <div className={css.benefitsListItemContainer}>
-            <h4 className={css.benefitsItemTitle}>Ethically sourced.</h4>
-            <p className={css.benefitsItemText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
-              felis finibus consequat.
-            </p>
-          </div>
-        </li>
-        <li className={css.benefitsItem}>
-          <Icon3 />
-          <div className={css.benefitsListItemContainer}>
-            <h4 className={css.benefitsItemTitle}>Ethically sourced.</h4>
-            <p className={css.benefitsItemText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
-              felis finibus consequat.
-            </p>
-          </div>
-        </li>
-      </ul>
+        <ul className={css.desktopList}>
+          {slider2Images.map((img, index) => (
+            <li key={index} className={css.desktopListItem}>
+              <img src={img} alt={`logo${index}`} />
+            </li>
+          ))}
+        </ul>
 
-      <CTAButton />
-      <StarsUnderCTA />
+        <h2 className={css.title}>Loungewear you can be proud of.</h2>
+        <div className={css.benefitsSlider}>
+          <ImageSlider
+            images={slider1Images}
+            sliderSettings={slider1Settings}
+            dotsStyles={{ bottom: "30px" }}
+            imageClassName={css.benefitsImage}
+          />
+          <p className={css.productName}>White Robe</p>
+        </div>
+
+        <ul className={css.benefitsList}>
+          <li className={css.benefitsItem}>
+            <Cloud />
+            <div className={css.benefitsListItemContainer}>
+              <h4 className={css.benefitsItemTitle}>Ethically sourced.</h4>
+              <p className={css.benefitsItemText}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                lobortis sapien facilisis tincidunt pellentesque. In eget ipsum
+                et felis finibus consequat.
+              </p>
+            </div>
+          </li>
+          <li className={css.benefitsItem}>
+            <Icon1 />
+            <div className={css.benefitsListItemContainer}>
+              <h4 className={css.benefitsItemTitle}>Ethically sourced.</h4>
+              <p className={css.benefitsItemText}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                lobortis sapien facilisis tincidunt pellentesque. In eget ipsum
+                et felis finibus consequat.
+              </p>
+            </div>
+          </li>
+          <li className={css.benefitsItem}>
+            <Leafe />
+            <div className={css.benefitsListItemContainer}>
+              <h4 className={css.benefitsItemTitle}>Ethically sourced.</h4>
+              <p className={css.benefitsItemText}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                lobortis sapien facilisis tincidunt pellentesque. In eget ipsum
+                et felis finibus consequat.
+              </p>
+            </div>
+          </li>
+          <li className={css.benefitsItem}>
+            <Icon3 />
+            <div className={css.benefitsListItemContainer}>
+              <h4 className={css.benefitsItemTitle}>Ethically sourced.</h4>
+              <p className={css.benefitsItemText}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                lobortis sapien facilisis tincidunt pellentesque. In eget ipsum
+                et felis finibus consequat.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div className={css.ctaContainer}>
+          <CTAButton />
+          <StarsUnderCTA />
+        </div>
+      </div>
     </section>
   );
 }

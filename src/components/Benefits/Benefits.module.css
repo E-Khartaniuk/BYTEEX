@@ -1,5 +1,5 @@
 .benefitsSection {
-  padding: 20px;
+  padding: 20px 40px 44px;
   text-align: center;
   position: relative;
   min-height: 600px;
@@ -18,6 +18,18 @@
   background-position: top center;
   background-repeat: no-repeat;
   z-index: -1;
+}
+.title {
+  margin: 0 auto;
+  color: #01005b;
+
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 26px;
+
+  line-height: 34px;
+  letter-spacing: 1.04px;
+  width: 330px;
 }
 
 .asSeen {
@@ -166,14 +178,16 @@
   letter-spacing: 0.42px;
 }
 
+.desktopList {
+  display: none;
+}
+.ctaContainer {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .logoSliderContainer {
     max-width: 768px;
-  }
-
-  .logoImage {
-    width: 80px;
-    height: 30px;
   }
 
   .benefitsSlider .customPrevArrow {
@@ -189,29 +203,136 @@
   .logoSliderContainer {
     max-width: 480px;
   }
+}
 
-  .logoImage {
-    width: 80px;
-    height: 30px;
+@media (min-width: 768px) {
+  .benefitsList {
+    flex-wrap: wrap;
+    width: 600px;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .benefitsItem:not(:last-child)::after {
+    width: 100%;
+    height: 1px;
+    background: rgba(196, 196, 196, 0.5);
+    bottom: -50px;
+  }
+
+  .benefitsItem:nth-last-child(-n + 2)::after {
+    background: none;
   }
 }
 
-/* @media (max-width: 428px) {
-  .logoSliderContainer {
-    max-width: 428px;
+@media (min-width: 1465px) {
+  .benefitsSection::before {
+    background: linear-gradient(
+      180deg,
+      #f9f0e5 0%,
+      rgba(249, 240, 229, 0.18) 43.05%,
+      rgba(249, 240, 229, 0) 100%
+    );
+  }
+  .benefitsSection {
+    padding-top: 78px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 54px;
   }
 
-  .logoImage {
-    width: 80px;
-    height: 30px;
-  } */
+  .container {
+    margin: 0 auto;
+    max-width: 1465px;
+    position: relative;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 
-/* :global(.slick-slide) {
-    width: 214px !important;
-    margin: 0 10px !important;
-  } */
+  .asSeen {
+    margin: 0;
 
-/* .logoSliderContainer :global(.slick-list) {
-    margin: 0 -10px !important;
-  } */
-/* } */
+    font-size: 20px;
+
+    line-height: 23px;
+    letter-spacing: 0.6px;
+  }
+
+  .logoSliderContainer {
+    display: none;
+  }
+  .desktopList {
+    margin-top: 28px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefitsSlider {
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+  }
+
+  .title {
+    width: 600px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1.28px;
+    text-align: left;
+    margin-top: 110px;
+    margin-bottom: 115px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .benefitsList {
+    margin: 0;
+    gap: 28px;
+  }
+  .benefitsItem {
+    width: 497px;
+    display: flex;
+    flex-direction: row;
+  }
+  .benefitsItem svg {
+    margin-right: 32px;
+    margin-bottom: 44px;
+  }
+
+  .benefitsItemText {
+    text-align: left;
+  }
+  .benefitsListItemContainer {
+    width: 497px;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .benefitsItem:not(:last-child)::after {
+    content: " ";
+    position: relative;
+    width: 0%;
+    height: 0px;
+    background: rgba(196, 196, 196, 0);
+    bottom: 0px;
+  }
+  .ctaContainer {
+    display: none;
+  }
+
+  .benefitsItemTitle {
+    text-align: left;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.88px;
+  }
+  .benefitsItemText {
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.45px;
+  }
+}

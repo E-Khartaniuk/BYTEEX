@@ -25,3 +25,13 @@
   line-height: 22px; /* 146.667% */
   letter-spacing: 0.45px;
 }
+
+@media (min-width: 1465px) {
+  .starContainer {
+    display: none;
+  }
+
+  .finalCTASection {
+    padding: 84px 100px 94px;
+  }
+}

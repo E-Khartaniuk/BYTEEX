@@ -48,13 +48,13 @@ function Hero() {
           </li>
         </ul>
         <CTAButton />
-      </div>
-      <div className={css.feedbackCardContainer}>
-        <HeroFeedbackCard
-          name="Jane, S."
-          photo={feedbackPhoto}
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo."
-        />
+        <div className={css.feedbackCardContainer}>
+          <HeroFeedbackCard
+            name="Jane, S."
+            photo={feedbackPhoto}
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo."
+          />
+        </div>
       </div>
     </section>
   );
